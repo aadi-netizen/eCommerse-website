@@ -1,0 +1,52 @@
+/****************** header ******************/
+
+/* hover effect on dropdonw */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* logo */
+.navbar-brand {
+    font-family: 'Rochester', cursive;
+    font-size: 2rem !important;
+    color: darkred !important;
+}
+
+
+.cover-image {
+    height: 70vh !important;
+    width: 100%;
+}
+
+
+
+/**************** index page ****************/
+
+.cover-hedding {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+.cover-main-heddnig {
+    font-family: 'Rochester', cursive;
+    font-size: 4.5rem;
+}
+
+.slogan {
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 900;
+}
+
+.card > img {
+    height: 200px;
+}
+
+.card-vessel {
+    justify-content: space-between;
+
+}
+
+.card {
+    background-color: bisque !important;
+}
