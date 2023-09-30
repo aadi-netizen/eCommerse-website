@@ -22,6 +22,10 @@
 
 /**************** index page ****************/
 
+.cover-div {
+    position: relative;
+}
+
 .cover-hedding {
     position: absolute;
     left: 50%;
@@ -30,12 +34,13 @@
 
 .cover-main-heddnig {
     font-family: 'Rochester', cursive;
-    font-size: 4.5rem;
+    font-size: 5.5vw;
 }
 
 .slogan {
     font-family: 'Gruppo', sans-serif;
     font-weight: 900;
+    font-size: 1.5vw;
 }
 
 .card > img {
