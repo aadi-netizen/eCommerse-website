@@ -1,0 +1,137 @@
+
+
+
+/****************** header ******************/
+
+/* hover effect on dropdonw */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* logo */
+.navbar-brand {
+    font-family: 'Rochester', cursive;
+    font-size: 2rem !important;
+    color: darkred !important;
+}
+
+
+.cover-image {
+    height: 70vh !important;
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    #navbarSupportedContent {
+        margin-left: 15%;
+       }
+       
+}
+
+
+
+/**************** index page ****************/
+
+.cover-div {
+    position: relative;
+    padding: 0 !important;
+}
+
+.cover-hedding {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+.cover-main-heddnig {
+    font-family: 'Rochester', cursive;
+    font-size: 5.5vw;
+}
+
+.slogan {
+    font-family: 'Gruppo', sans-serif;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+
+.card > img {
+    height: 250px;
+}
+
+.card-vessel {
+   justify-content: space-evenly;
+
+}
+
+.featured_cards {
+    background-color: bisque !important;
+    max-width: 16em;
+    box-sizing: border-box;
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border-radius: 24px;
+}
+
+
+
+@media (max-width: 576px) {
+    #carouselExampleIndicators2 {
+        display: none;
+    }
+
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    #carouselExampleIndicators3 {
+        display: block;
+    }
+}
+
+/* Media query to make the featured product responsive */
+
+@media (max-width: 992px) and (min-width: 576px) {
+    #carouselExampleIndicators3 {
+        display: none;
+    }
+
+    #carouselExampleIndicators {
+        display: none;
+    }
+
+    #carouselExampleIndicators2 {
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    #carouselExampleIndicators {
+        display: block;
+    }
+
+    #carouselExampleIndicators2 {
+        display: none;
+    }
+
+    #carouselExampleIndicators3 {
+        display: none;
+    }
+}
+
+
+/* product pages styles */
+
+.card-title {
+    font-size: 1.15em;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+}
+
+.card-subtitle {
+    font-weight: 700;
+}
+
+

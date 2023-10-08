@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
 
-     <!-- favicon -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+
+  <!-- favicon -->
   <link href="images/favicon.ico" rel="icon" type="image/x-icon">
 
   <!--------------------------------- bootstrap minified css cdn --------------------------------->
@@ -13,42 +14,76 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
   <!-- My stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./common_files/styles.css">
 
 </head>
+
 <body>
-    <div id="header"></div>
+  <div id="header"></div>
 
-    <div class="container-fluid text-center">
-      <h1 class="display-4">Login</h1>
-      <div class="container w-5">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+  <div class="container-fluid w-50 my-5 text-bg-light">
+    <h1 class="display-4 text-center">Login</h1>
+    <div class="container">
+
+      <!-- Login form -->
+      <form class="">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label col-form-label-lg">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="xyz@email.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label col-form-label-lg">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="******">
+        </div>
+        <button class="btn btn-primary w-100" onclick="login()">Login</button>
+      </form>
+      
     </div>
-  
+  </div>
 
-      <div id="footer"></div>
 
-      <!-- jquery cdn  -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <div id="footer"></div>
+
+ <!-- cdn for bootstrap script file -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jquery cdn  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+ 
+  <!-- script for dynamic header -->
+  <script>
+    $(function () {
+      $("#header").load("./common_files/header.html");
+      $("#footer").load("./common_files/footer.html");
+    });
+  </script>
+
+   <!-- My script -->
+<script src="./common_files/script.js"></script>
+   <!-- <script>
+    //  script for login form authenticatioin
+
+document.getElementById("loginFormSubmit").addEventListener("click", function () {
+    console.log("button has been clicked.");
+
+    let userEmail = document.getElementById("exampleInputEmail1").value;
+    let userPassword = document.getElementById("exampleInputPassword1").value;
+
+    console.log(userEmail, userPassword);
+
+    if (userEmail === "admin@admin.com" && userPassword === "123456" ) {
+        alert("Login successful");
+    }
+    else {
+        alert("Incorrect email or password");
+    }
     
-      <!-- script for dynamic header -->
-      <script>
-        $(function () {
-          $("#header").load("header.html");
-          $("#footer").load("footer.html");
-        })
-      </script>
+
+
+})
+   </script> -->
 </body>
+
 </html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart page</title>
+
+  <!-- favicon -->
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+
+  <!--------------------------------- bootstrap minified css cdn --------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+ <!-- My stylesheet -->
+ <link rel="stylesheet" href="./common_files/styles.css">
+
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div class="container-fluid gx-5 my-5 h-100">
+    <div class="row g-3">
+
+      <!-- Items in the cart section -->
+      <div class="col-md-8">
+        <div class="card h-100">
+          <div class="card-header display-6 text-center">
+            Items in cart
+          </div>
+
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://zaribanaras.com/cdn/shop/products/3_b064d221-1694-49fe-b11f-9e6a973229ce.jpg?v=1645439946"
+                class="img-fluid rounded-start" alt="Ash Grey Woven Banarasi Silk Saree">
+            </div>
+            <div class="col-md-4">
+
+              <div class="card-body">
+                <h5 class="card-title">Ash Grey Woven Banarasi Silk Saree</h5>
+                <span>cost: ₹ 7299</span>
+
+              </div>
+
+            </div>
+
+            <div class="col-md-4">
+              <form class="">
+                <div class="my-3 mx-3 d-flex">
+                  <button class="btn btn-light">
+                    <i class="fa-sharp fa-solid fa-plus"></i>
+                  </button>           
+                  <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="">
+                    <button class="btn btn-light">
+                      <i class="fa-sharp fa-solid fa-minus"></i>
+                    </button>   
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Summary section -->
+      <div class="col-md-4">
+        <div class="card  h-100">
+          <div class="card-header display-6 text-center">
+            Summary
+          </div>
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <span>Cost</span>
+              <span>₹ 7299</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>Shipping</span>
+              <span>₹ 300</span>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+              <span>Total</span>
+              <span>₹ 7599</span>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <button class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="footer"></div>
+
+   <!-- cdn for bootstrap script file -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jquery cdn  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+   <!-- My script -->
+   <script src="./common_files/myScript.js"></script>
+
+   <!-- script for dynamic header -->
+   <script>
+     $(function () {
+       $("#header").load("./common_files/header.html");
+       $("#footer").load("./common_files/footer.html");
+     })
+   </script>
+</body>
+
+</html>
